@@ -1,0 +1,14 @@
+[Publico]
+comment = Carpeta publica para todos
+path = /srv/samba/publico
+browseable = yes
+guest ok = yes
+read only = no
+write list = @sambashare
+
+[Privado_tech]
+comment = Carpeta privada para el usuario tech
+path = /srv/samba/privado_tech
+browseable = yes
+read only = no
+valid users = tech
